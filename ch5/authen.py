@@ -14,6 +14,9 @@ def basic_auth():
 	print response.text
 	print response.request.headers
 
+'''
+	基本的OAuth
+'''
 def basic_oauth():
 	headers={'Authorization':'token 572982888bafee4595e4c3df253b700c4c848959'}
 	response = requests.get(construct_url('user/emails'),headers=headers)
